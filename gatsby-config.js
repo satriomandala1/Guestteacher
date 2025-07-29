@@ -9,6 +9,7 @@ module.exports = {
     title: siteConfig.name,
     author: siteConfig.author,
     description: siteConfig.description,
+   keywords: "kursus linux fundamental, training linux fundamental, pelatihan linux fundamental, belajar linux fundamental untuk pemula, kursus jaringan linux fundamental, kursus sistem operasi linux fundamental, training command line linux fundamental, pelatihan terminal linux fundamentalkursus dasar-dasar linux fundamental, kursus shell dan bash linux fundamental", 
     image: siteConfig.image,
     siteUrl: "https://clay-gatsby.netlify.app/",
     social: {
