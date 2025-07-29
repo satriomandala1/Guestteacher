@@ -1,6 +1,6 @@
 ---
 templateKey: exhibitions-sub-page
-thumbnail: /img/Bhakti3.jpg
+thumbnail: img/Bhakti3.jpg
 date: 2023-03-06T05:10:14.676Z
 title: SMK Bhakti Pertiwi
 description: ""
