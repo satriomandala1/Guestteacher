@@ -8,7 +8,7 @@ description: ""
 number: 1
 pagetype:
   - main
-featuredimage: /img/gambar3.jpg
+featuredimage: /img/sampul.jpg
 ---
 
 
