@@ -25,6 +25,7 @@ const BlogPostTemplate = (props) => {
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
 
+
       />
       <article
         className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
@@ -58,6 +59,7 @@ const BlogPostTemplate = (props) => {
             </a>
 
           </div>
+          
           <div>
           <a style={{ display: previousLinkStatus ? "flex" : 'none', alignItems: "center", color: "#131313", fontSize: "2rem" }} href={previousSlug}>
               <span>{pageContext.previous ? pageContext.previous.frontmatter.title : ""}
@@ -95,6 +97,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
         thumbnail {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

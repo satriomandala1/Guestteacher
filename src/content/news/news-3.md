@@ -5,9 +5,7 @@ date: 2022-02-04T10:06:48.715Z
 title: Google Workspace
 description: ""
 ---
-<!--[clay-images-17](/img/clay-images-17.jpg)
 
-![clay-images-15](/img/clay-images-15.jpg)-->
 
 Workshop Google Workspace ini dirancang untuk memberikan pengetahuan dasar sekaligus pemahaman mendalam tentang bagaimana cara menggunakan berbagai aplikasi digital berbasis cloud yang telah menjadi bagian penting dari dunia kerja modern. Dalam dunia profesional yang serba cepat dan digital saat ini, keterampilan dalam memanfaatkan layanan Google Workspace sangat dibutuhkan untuk menunjang efektivitas kerja dan kolaborasi tim.
 

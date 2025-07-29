@@ -10,9 +10,7 @@ pagetype:
   - main
 featuredimage: /img/gambar3.jpg
 ---
-<!-- ![clay-images-11](/img/clay-images-11.jpg)
 
-![clay-images-12](/img/clay-images-12.jpg) -->
 
 Perkenalkan kami dari *PT. Aretanet Indonesia*, merupakan
 Perusahaan yang bergerak di bidang pendidikan, IT dan Digital

@@ -5,9 +5,7 @@ date: 2023-03-06T05:10:14.676Z
 title: Mikrotik Fundamental
 description: ""
 ---
-<!--[clay-images-10](/img/clay-images-10.jpg)
 
-![clay-images-12](/img/clay-images-12.jpg)-->
 
 Mikrotik Fundamental
 Workshop Mikrotik Fundamental ini dirancang sebagai program pengenalan dan pelatihan dasar yang ditujukan kepada siswa jurusan Teknik Komputer dan Jaringan (TKJ) atau jurusan lain yang berkaitan dengan dunia jaringan komputer. Melalui kegiatan ini, peserta akan memperoleh pemahaman menyeluruh mengenai konsep dasar jaringan, serta penerapan praktis penggunaan perangkat Mikrotik yang umum digunakan di lingkungan sekolah, instansi, maupun dunia industri.

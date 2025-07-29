@@ -5,9 +5,7 @@ date: 2023-03-16T04:59:59.653Z
 title: Introduction
 description: ""
 ---
-<!--[clay-images-11](/img/clay-images-11.jpg)
 
-![clay-images-12](/img/clay-images-12.jpg)-->
 
 Perkembangan dunia pendidikan saat ini menuntut peningkatan
 kualitas pembelajaran yang tidak hanya berbasis teori, tetapi juga

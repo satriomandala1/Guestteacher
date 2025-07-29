@@ -5,9 +5,6 @@ date: 2023-03-06T05:10:14.676Z
 title: Maksud dan Tujuann
 description: ""
 ---
-<!--[clay-images-10](/img/clay-images-10.jpg)
-
-![clay-images-12](/img/clay-images-12.jpg)-->
 
 Maksud dari diadakannya kegiatan ini adalah sebagai bentuk nyata dalam mendukung peningkatan mutu pendidikan dan pengembangan keterampilan siswa SMK/SMA, khususnya dalam menghadapi tantangan dunia kerja yang semakin kompetitif. Kegiatan ini dirancang untuk memberikan pengalaman belajar yang lebih aplikatif dan kontekstual, sehingga para siswa tidak hanya memahami teori, namun juga mampu menerapkannya secara langsung dalam dunia nyata.
 

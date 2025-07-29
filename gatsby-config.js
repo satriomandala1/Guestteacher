@@ -2,6 +2,7 @@
 // import urlJoin from 'url-join';
 const siteConfig = require("./siteConfig")
 // import siteConfig from "./siteConfig"
+;
 
 module.exports = {
   siteMetadata: {

@@ -5,9 +5,7 @@ date: 2022-02-04T10:06:48.715Z
 title: Keuntungan dan Anggaran Dana 
 description: ""
 ---
-<!--![clay-images-17](/img/clay-images-17.jpg)
 
-![clay-images-15](/img/clay-images-15.jpg)-->
 
 **Keuntungan:**
 - Dengan mengikuti kegiatan ini peserta akan mendapatkan kesemopatan belajar teknologi informasi dasar seperti MikroTik, linux, Pemrograman, Design, Bisnis digital dan Ms. office

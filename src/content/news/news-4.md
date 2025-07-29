@@ -5,9 +5,7 @@ date: 2022-02-04T10:06:48.715Z
 title: Bisnis Digital
 description: ""
 ---
-<!--[clay-images-17](/img/clay-images-17.jpg)
 
-![clay-images-15](/img/clay-images-15.jpg)-->
 
 Bisnis Digital
 Workshop Bisnis Digital ini dirancang untuk memberikan pemahaman mendasar kepada peserta mengenai konsep dan praktik dalam menjalankan kegiatan bisnis dengan memanfaatkan teknologi digital. Di era transformasi digital seperti sekarang, kemampuan untuk memasarkan produk dan jasa secara online menjadi keterampilan penting yang sangat dibutuhkan di berbagai sektor industri, baik untuk pelaku usaha kecil maupun perusahaan besar.
