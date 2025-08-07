@@ -19,6 +19,13 @@ module.exports = {
     },
   },
   plugins: [
+    {
+  resolve: `gatsby-plugin-netlify-cms`,
+  options: {
+    modulePath: `${__dirname}/src/cms/cms.js`,
+  },
+},
+
 
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
