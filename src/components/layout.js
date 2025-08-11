@@ -1,20 +1,41 @@
-import React from "react";
+
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
+import React, { useEffect, useState } from "react";
+
 
 const Layout = (props) => {
   const data = useLocation();
   const { title, children, social } = props;
-  // const path = props&&props.location&&props.location
 
   const [toggleNav, setToggleNav] = React.useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return; // ⛑️ Cegah error kalau elemen belum ada
+
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
+  
   return (
+    
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
-      <header className="site-head">
-        <div className="site-head-container">
-          { <a
+      <header className="site-head" id="navbar">
+        <div className="site-head-container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          
+          <a
             className="nav-burger"
-            href={`#`}
+            href="#"
             onClick={() => setToggleNav(!toggleNav)}
           >
             <div
@@ -27,126 +48,90 @@ const Layout = (props) => {
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </a> }
-          <nav id="swup" className="site-head-left">
-            <ul className="nav" role="menu">
-            
-              <li
-                className={`nav-home  ${data.pathname.includes("/profile") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/profile`}>About</Link>
+          </a>
+
+          <nav id="swup" className="site-head-left navbar-text">
+            <ul className="nav" role="menu" style={{ display: "flex", listStyle: "none", margin: 0, padding: 0 }}>
+              <li className={`nav-home ${data.pathname.includes("/profile") ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/profile">About</Link>
               </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/work") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/work`}>Introduction</Link>
+              <li className={`nav-home ${data.pathname.includes("/work") ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/work">Introduction</Link>
               </li>
-                <li
-                className={`nav-home  ${data.pathname === "/sold" ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/sold`}>Documentation</Link>
+              <li className={`nav-home ${data.pathname === "/sold" ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/sold">Documentation</Link>
               </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/news") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/news`}>Materials</Link>
+              <li className={`nav-home ${data.pathname.includes("/news") ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/news">Materials</Link>
               </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/artikel") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/artikel`}>article</Link>
+              <li className={`nav-home ${data.pathname.includes("/artikel") ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/artikel">Article</Link>
               </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/contact") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/contact`}>Contact</Link>
+              <li className={`nav-home ${data.pathname.includes("/contact") ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/contact">Contact</Link>
               </li>
-              <li
-                className={`nav-home  ${data.pathname.includes("/") ? "nav-current" : ""} `}
-                role="menuitem"
-              >
-                <Link to={`/`}></Link>
+              <li className={`nav-home ${data.pathname === "/" ? "nav-current" : ""}`} role="menuitem">
+                <Link to="/">Home</Link>
               </li>
             </ul>
           </nav>
-          {/* <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
-          </div> */}
+          
+
           <div className="site-head-right">
             <div className="social-links">
-              <Link
-                to={`https://www.facebook.com/AretaCollege/${social.facebook}`}
+              <a
+                href={`https://www.facebook.com/AretaCollege/${social.facebook}`}
                 title="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Facebook
-              </Link>
-              <Link
-                to={`https://www.instagram.com/areta_informaticscollege/${social.twitter}`}
+              </a>
+              <a
+                href={`https://www.instagram.com/areta_informaticscollege/${social.twitter}`}
                 title="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Instagram
-              </Link>
-
-              <Link
-                to={`https://api.whatsapp.com/send?phone=6281285234904&text=Hallo%20kak%2C%20saya%20Desi.%20Ada%20yang%20bisa%20saya%20bantu%3F`}
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=6281285234904&text=Hallo%20kak%2C%20saya%20Desi.%20Ada%20yang%20bisa%20saya%20bantu%3F"
                 title="Whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Whatsapp
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </header>
-      <main id="site-main" className="site-main">
+
+      <main id="site-main" className="site-main" style={{ backgroundColor: "white" }}>
         <div id="swup" className="transition-fade">
           {children}
         </div>
       </main>
-      {/* <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built by {""}
+
+ <footer className="site-foot">
+       
         <a
           href="https://pmb.aretacollege.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          PT. ARETA INFORMATICS COLLEGE
+
+    <div class="marquee-content">
+      PT. ARETANET INDONESIA 
+    </div>
+   
+
+
+
+
         </a>
-        {""}  {""}
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-      </footer> */
-      <footer className="site-foot">
-          <a>Guest Teacher   
-           </a>
-        <a
-          href="https://pmb.aretacollege.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PT. ARETA INFORMATICS COLLEGE
-           </a>
       </footer>
-      }
     </div>
   );
 };
