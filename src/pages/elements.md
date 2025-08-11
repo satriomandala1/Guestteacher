@@ -1,8 +1,8 @@
 ---
 templateKey: elements
-title: Clay Gatsby Theme 
+title: Guest Theacher
 image: /img/sampul.jpg
-description: A stunning Gatsby theme designed for captivating image-centric websites, perfect for photographers, portfolios, and blogs.
+description: Areta.
 thumbnail: /img/sampul.jpg
 heading: Main Heading
 subheading: Sub HEading

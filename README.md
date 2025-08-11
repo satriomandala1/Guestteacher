@@ -1,5 +1,5 @@
 
-<h1 align=center>  Clay - A Gatsby Theme | <a href="https://clay-theme.netlify.app" rel="nofollow">Demo</a></h1>
+<h1 align=center>  Guest Theacher | <a href="https://clay-theme.netlify.app" rel="nofollow">Demo</a></h1>
 
 
 ![clay-gatsby-theme](https://github.com/lilxyzz/gatsby-clay/blob/master/src/img/Clay-Gatsby-theme.png)

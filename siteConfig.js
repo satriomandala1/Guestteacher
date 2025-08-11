@@ -1,15 +1,15 @@
 const siteConfig = {
-  name: 'Clay',
-  shortName: 'Clay',
-  description: 'Clay - Personal Gatsby Theme',
+  name: 'Areta',
+  shortName: 'Guest Theacher',
+  description: 'Areta - Guest Teacher',
   url: '/', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Travis Lord & Abdul Waqar',
+  author: 'Areta',
   twitter: '' ,
   facebook:'',
   github:'',
-  manifest_icon:`src/img/vase.png`,
-  image:`/vase.png`
+  manifest_icon:`src/img/gtc.png`,
+  image:`/gtc.png`
 
 }
 
