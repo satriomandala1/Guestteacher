@@ -1,6 +1,6 @@
 ---
 templateKey: artikel-sub-page
-thumbnail: /img/foto malika.jpeg
+thumbnail: /img/foto-jaringan.jpeg
 date: 2023-03-16T04:59:59.653Z
 title: Mengenal Perangkat Keras dan Perangkat Lunak dalam Jaringan Komputer
 description: Artikel ini membahas berbagai perangkat keras (hardware) dan perangkat lunak (software) yang digunakan dalam jaringan komputer, mulai dari fungsi, contoh, hingga cara kerjanya.
@@ -19,22 +19,22 @@ tags:
 
 Pendahuluan
 
-Di zaman serba terkoneksi seperti sekarang, jaringan komputer sudah menjadi bagian penting dalam kehidupan kita. Mulai dari sekolah, kantor, bisnis, hingga rumah, semuanya memanfaatkan jaringan untuk berbagi data dan sumber daya.
+Di zaman serba menggunkan teknologi seperti sekarang, jaringan terutama jaringan komputer sudah menjadi bagian yang vital dalam kehidupan sehari-hari. Baik di lingkungan kantor, sekolah, bisnis, maupun rumah, jaringan digunakan untuk berbagi data, sumber daya, dan informasi.
 
-Nah, di balik jaringan yang berjalan lancar, ada dua komponen utama yang bekerja sama: perangkat keras dan perangkat lunak. Tanpa keduanya, jaringan tidak akan bisa berfungsi dengan baik. Artikel ini akan membahas secara santai tapi lengkap tentang kedua komponen ini.
+Di balik kelancaran sebuah jaringan, terdapat dua elemen utama yang saling mendukung, yaitu perangkat keras dan perangkat lunak. Tanpa keberadaan keduanya, jaringan tidak akan dapat beroperasi dengan optimal. Artikel ini akan membahas dengan lengkap tentang kedua komponen ini.
 
 Apa Itu Perangkat Keras Jaringan?
 
-Perangkat keras (hardware) adalah semua komponen fisik jaringan yang bisa kita lihat dan sentuh. Perangkat ini menjadi “alat tempur” utama dalam membangun koneksi antar komputer atau perangkat lain.
+Perangkat keras (hardware) merupakan seluruh komponen fisik jaringan yang dapat dilihat serta disentuh secara langsung. Perangkat ini menjadi “alat tempur” utama dalam membangun koneksi antar komputer atau perangkat lain.
 
 Beberapa contoh perangkat keras jaringan:
 
 Perangkat	Fungsi Utama
 Router	Mengarahkan lalu lintas data antar jaringan, biasanya menghubungkan LAN ke internet
-Switch	Menghubungkan banyak perangkat dalam satu jaringan lokal
+Switch	Menghubungkan banyak perangkat yang saling terhubung dalam satu jaringan
 Access Point	Menyediakan koneksi WiFi untuk perangkat nirkabel
 Kabel UTP	Media fisik untuk mengirimkan data antar perangkat
-Server	Menyimpan dan mengelola data atau layanan untuk klien di jaringan
+Server	berfungsi menyimpan sekaligus mengelola data maupun layanan yang dibutuhkan klien dalam satu jaringan.
 
 Tanpa perangkat keras ini, data tidak punya “jalan” untuk berpindah dari satu perangkat ke perangkat lain.
 
@@ -47,12 +47,12 @@ Beberapa contoh perangkat lunak jaringan:
 Perangkat Lunak	Fungsi Utama
 Sistem Operasi Jaringan	Mengatur sumber daya dan akses di jaringan (contoh: Windows Server, Linux Server)
 Aplikasi Monitoring	Memantau trafik dan mendeteksi masalah pada jaringan
-Firewall Software	Melindungi jaringan dari ancaman dan akses ilegal
+Firewall Software	Melindungi jaringan dari akses akses ilegal yang dapat berpotensi virus
 Driver Jaringan	Menghubungkan perangkat keras dengan sistem operasi
-VPN Software	Mengamankan koneksi jarak jauh antar jaringan
+VPN Software	berfungsi melindungi koneksi jarak jauh antarjaringan agar tetap aman.
 Kenapa Keduanya Harus Bekerja Sama?
 
-Bayangkan perangkat keras tanpa perangkat lunak — seperti komputer tanpa sistem operasi, hanya benda mati yang tidak bisa digunakan. Sebaliknya, perangkat lunak tanpa perangkat keras tidak punya tempat untuk dijalankan.
+Bayangkan perangkat keras bekerja tanpa perangkat lunak, seperti komputer yang tanpa sistem operasi, hanya benda mati yang tidak memiliki fungsi sehingga tidak bisa digunakan. Sebaliknya, perangkat lunak tanpa perangkat keras tidak punya tempat untuk dijalankan.
 
 Dalam jaringan komputer, keduanya saling melengkapi:
 
@@ -70,12 +70,12 @@ Contoh Topologi Jaringan Sederhana
 [PC / Laptop / HP]
 
 
-Topologi di atas menggunakan router dan switch (hardware) serta sistem operasi dan aplikasi manajemen jaringan (software) untuk mengatur lalu lintas data.
+Topologi tersebut memanfaatkan router dan switch sebagai perangkat keras, serta sistem operasi dan aplikasi manajemen jaringan sebagai perangkat lunak, untuk mengatur alur lalu lintas data.
 
 Kesimpulan
 
-Perangkat keras dan perangkat lunak dalam jaringan komputer ibarat pasangan yang tidak bisa dipisahkan. Perangkat keras menyediakan media dan peralatan, sementara perangkat lunak mengatur, mengontrol, dan mengamankan.
+Dalam sistem jaringan komputer, perangkat keras dan perangkat lunak memiliki atau mempunyai hubungan yang saling melengkapi atau mengisi satu sama lain, sehingga keduanya tidak dapat dipisahkan. Perangkat keras berperan sebagai penyedia media dan alat fisik, sedangkan perangkat lunak bertugas mengelola, mengendalikan, serta menjaga keamanan sistem jaringan.
 
-Dengan memahami keduanya, kita bisa merancang, mengelola, dan memelihara jaringan dengan lebih efisien. Baik untuk siswa SMK TKJ, mahasiswa IT, maupun teknisi profesional, pengetahuan ini adalah fondasi sebelum masuk ke konfigurasi jaringan yang lebih kompleks.
+Baik bagi siswa SMK jurusan TKJ, mahasiswa di bidang IT, maupun teknisi berpengalaman, pengetahuan ini akan sangat bermanfaat di masa depan, karena menjadi dasar sebelum mempelajari konfigurasi jaringan yang lebih rumit.
 
-Belajar jaringan itu seperti membangun rumah: perangkat keras adalah bangunannya, perangkat lunak adalah aturan dan sistem yang membuatnya nyaman dihuni.
+Belajar jaringan itu sama halnya seperti membangun rumah: perangkat keras adalah alat alat dan bahan bahannya, perangkat lunak adalah aturan atau sistem yang membuatnya nyaman untuk dihuni.
