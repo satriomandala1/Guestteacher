@@ -43,7 +43,7 @@
     "url-join": "^5.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "husky": "^9.1.6",
     "postcss-color-function": "^4.1.0",
     "postcss-custom-properties": "^14.0.4",
