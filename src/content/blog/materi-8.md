@@ -2,7 +2,7 @@
 templateKey: artikel-sub-page
 thumbnail: /img/basic-office.jpeg
 date: 2023-03-16T04:59:59.653Z
-title: Basic Office Skills: Kunci Sukses di Dunia Kerja
+title: Basic Office Skills Kunci Sukses di Dunia Kerja
 description: Artikel ini membahas keterampilan dasar kantor yang wajib dikuasai setiap profesional, mulai dari penguasaan software perkantoran hingga manajemen waktu dan komunikasi efektif.
 tags:
  - Basic Office Skills
