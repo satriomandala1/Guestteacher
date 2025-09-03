@@ -1,7 +1,4 @@
-// const urljoin = require("url-join")
-// import urlJoin from 'url-join';
 const siteConfig = require("./siteConfig")
-// import siteConfig from "./siteConfig"
 
 module.exports = {
   siteMetadata: {
@@ -25,9 +22,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/img`,
@@ -41,11 +36,9 @@ module.exports = {
         name: `pages`,
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -54,12 +47,7 @@ module.exports = {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               ignoreFileExtensions: [
-                `png`,
-                `jpg`,
-                `jpeg`,
-                `bmp`,
-                `tiff`,
-                `webp`,
+                `png`, `jpg`, `jpeg`, `bmp`, `tiff`, `webp`,
               ],
             },
           },
@@ -83,13 +71,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
-      },
-    },
-
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     {
@@ -118,7 +99,6 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        resolve: `gatsby-plugin-manifest`,
         icon: siteConfig.manifest_icon,
       },
     },
