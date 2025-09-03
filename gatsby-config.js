@@ -2,14 +2,14 @@
 // import urlJoin from 'url-join';
 const siteConfig = require("./siteConfig")
 // import siteConfig from "./siteConfig"
-;
 
 module.exports = {
   siteMetadata: {
     title: siteConfig.name,
     author: siteConfig.author,
     description: siteConfig.description,
-   keywords: "kursus linux fundamental, training linux fundamental, pelatihan linux fundamental, belajar linux fundamental untuk pemula, kursus jaringan linux fundamental, kursus sistem operasi linux fundamental, training command line linux fundamental, pelatihan terminal linux fundamentalkursus dasar-dasar linux fundamental, kursus shell dan bash linux fundamental", 
+    keywords:
+      "kursus linux fundamental, training linux fundamental, pelatihan linux fundamental, belajar linux fundamental untuk pemula, kursus jaringan linux fundamental, kursus sistem operasi linux fundamental, training command line linux fundamental, pelatihan terminal linux fundamental, kursus dasar-dasar linux fundamental, kursus shell dan bash linux fundamental",
     image: siteConfig.image,
     siteUrl: "https://clay-gatsby.netlify.app/",
     social: {
@@ -20,12 +20,11 @@ module.exports = {
   },
   plugins: [
     {
-  resolve: `gatsby-plugin-netlify-cms`,
-  options: {
-    modulePath: `${__dirname}/src/cms/cms.js`,
-  },
-},
-
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
 
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -42,39 +41,26 @@ module.exports = {
         name: `pages`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/static/img`,
-    //     name: "uploads",
-    //   },
-    // },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/src/img`,
-    //     name: "images",
-    //   },
-    // },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "uploads",
-            },
-          },
-          {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
-              // destinationDir: "public",
-              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff` ,`webp`],
-          
+              ignoreFileExtensions: [
+                `png`,
+                `jpg`,
+                `jpeg`,
+                `bmp`,
+                `tiff`,
+                `webp`,
+              ],
             },
           },
           {
@@ -96,7 +82,6 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-
         ],
       },
     },
@@ -121,21 +106,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+        printRejected: true,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
-    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -149,10 +122,8 @@ module.exports = {
         icon: siteConfig.manifest_icon,
       },
     },
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
   ],
 }
-
